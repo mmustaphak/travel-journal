@@ -1,0 +1,15 @@
+header{
+    background-color:#F55A5A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 550px;
+    gap: 7px;
+    padding: 20px 0px 20px 0px;
+}
+header p{
+    font: inherit;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 14px;
+}
