@@ -1,0 +1,7 @@
+main{
+    min-width: 550px;
+    display: flex;
+    padding-left:40px;
+    padding-right: 40px;
+    background-color: #FFFFFF;
+}
