@@ -1,4 +1,6 @@
+/* eslint-disable react/prop-types */
 import "./Card.css"
+import pin from "../assets/pin.svg"
 export default function Card(props){
     console.log(props)
     return(
@@ -6,7 +8,7 @@ export default function Card(props){
             <img src={props.item.url} className="Card--image"/>
             <div>
                 <div>
-                    <img src="src/assets/pin.svg"/>
+                    <img src={pin}/>
                     <p>{props.item.country}</p>
                     <u>View on Google Maps</u>
                 </div>
