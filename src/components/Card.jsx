@@ -1,17 +1,18 @@
 import "./Card.css"
-export default function Card(){
+export default function Card(props){
+    console.log(props)
     return(
         <div className="Card">
-            <img src="https://source.unsplash.com/WLxQvbMyfas" className="Card--image"/>
+            <img src={props.item.url} className="Card--image"/>
             <div>
                 <div>
                     <img src="src/assets/pin.svg"/>
-                    <p>JAPAN</p>
+                    <p>{props.item.country}</p>
                     <u>View on Google Maps</u>
                 </div>
-                <h2>Mount Fuji</h2>
-                <strong>12 Jan, 2021 - 24 Jan, 2021</strong>
-                <p>Mount Fuji is the tallest mountain in Japan, standing at 3,776<br/>meters (12,380 feet). Mount Fuji is the single most popular tourist<br/>site in Japan, for both Japanese and foreign tourists.</p>
+                <h2>{props.item.location}</h2>
+                <strong>{props.item.date}</strong>
+                <p>{props.item.description}</p>
             </div>
             <hr/>
         </div>
